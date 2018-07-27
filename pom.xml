@@ -7,11 +7,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>10</maven.compiler.source>
+        <maven.compiler.target>10</maven.compiler.target>
         <!-- vert.x properties -->
         <vertx.version>3.4.0</vertx.version>
-        <vertx.verticle>io.vertx.sample.MyFirstVerticle</vertx.verticle>
+        <vertx.verticle>io.vertx.sample.MyFirstRXVerticle</vertx.verticle>
         <!-- Maven plugins -->
         <fabric8-vertx-maven-plugin.version>1.0.5</fabric8-vertx-maven-plugin.version>
     </properties>
@@ -30,6 +30,10 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-rx-java</artifactId>
         </dependency>
     </dependencies>
     <build>
